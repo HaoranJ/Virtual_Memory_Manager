@@ -2,7 +2,8 @@
 
 This is a Virtual Memory Manager in C++
 
-I have implemented the following page replacement algorithms to handle the cases where there are no free page frames available.
+I have implemented the following page replacement algorithms to handle the cases where there
+are no free page frames available.
 NRU(Not Recently Used)
 LRU(Least Recently Used)
 Random
@@ -18,4 +19,10 @@ Run:
 	./runit_genclass.sh <out-dir> ./mmu
 or
 
-Follow the following invocation:./mmu [-a<algo>] [-o<options>] [–f<num_frames>] inputfile randomfile (optional arguments in any order). e.g. ./mmu –aX –o[OPFS] infile rfile selects the Clock Algorithm for Virtual Pages and creates output for operations, final page table content and final frame table content and summary line (see above). The outputs should be generated in that order if specified in the option string regardless how the order appears in the option string. Default values are equivalent to “-al –f32” for options. We will for sure test the program with –oOPFS options (see below), change the page frame numbers and “diff” compare it to the expected output.
+Follow the following invocation:./mmu [-a<algo>] [-o<options>] [–f<num_frames>] inputfile randomfile (optional arguments in
+any order). e.g. ./mmu –aX –o[OPFS] infile rfile selects the Clock Algorithm for Virtual Pages
+and creates output for operations, final page table content and final frame table content 
+and summary line (see above). The outputs should be generated in that order if specified 
+in the option string regardless how the order appears in the option string. Default values 
+are equivalent to “-al –f32” for options. We will for sure test the program with –oOPFS 
+options (see below), change the page frame numbers and “diff” compare it to the expected output.
